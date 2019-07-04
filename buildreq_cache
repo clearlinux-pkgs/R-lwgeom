@@ -1,7 +1,3 @@
 0.1.7
-R-Rcpp
-R-e1071
-R-geosphere
-R-sf
-R-sp
-R-units
+R-DBI
+R-classInt
