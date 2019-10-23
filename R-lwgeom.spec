@@ -4,26 +4,27 @@
 #
 Name     : R-lwgeom
 Version  : 0.1.7
-Release  : 9
+Release  : 10
 URL      : https://cran.r-project.org/src/contrib/lwgeom_0.1-7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/lwgeom_0.1-7.tar.gz
 Summary  : Bindings to Selected 'liblwgeom' Functions for Simple Features
 Group    : Development/Tools
 License  : GPL-2.0
 Requires: R-lwgeom-lib = %{version}-%{release}
-Requires: R-DBI
 Requires: R-Rcpp
-Requires: R-classInt
 Requires: R-sf
+Requires: R-sp
 Requires: R-units
 BuildRequires : R-DBI
 BuildRequires : R-Rcpp
 BuildRequires : R-classInt
 BuildRequires : R-sf
+BuildRequires : R-sp
 BuildRequires : R-units
 BuildRequires : buildreq-R
 BuildRequires : geos-dev
 BuildRequires : proj-dev
+BuildRequires : util-linux
 
 %description
 liblwgeom code obtained from from https://github.com/postgis/postgis
@@ -47,10 +48,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1562202958
+export SOURCE_DATE_EPOCH=1571858850
 
 %install
-export SOURCE_DATE_EPOCH=1562202958
+export SOURCE_DATE_EPOCH=1571858850
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
