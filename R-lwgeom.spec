@@ -4,7 +4,7 @@
 #
 Name     : R-lwgeom
 Version  : 0.1.7
-Release  : 10
+Release  : 11
 URL      : https://cran.r-project.org/src/contrib/lwgeom_0.1-7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/lwgeom_0.1-7.tar.gz
 Summary  : Bindings to Selected 'liblwgeom' Functions for Simple Features
