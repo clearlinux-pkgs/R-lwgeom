@@ -4,7 +4,7 @@
 #
 Name     : R-lwgeom
 Version  : 0.2.3
-Release  : 16
+Release  : 17
 URL      : https://cran.r-project.org/src/contrib/lwgeom_0.2-3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/lwgeom_0.2-3.tar.gz
 Summary  : Bindings to Selected 'liblwgeom' Functions for Simple Features
@@ -13,9 +13,11 @@ License  : GPL-2.0
 Requires: R-lwgeom-lib = %{version}-%{release}
 Requires: R-Rcpp
 Requires: R-sf
+Requires: R-sp
 Requires: R-units
 BuildRequires : R-Rcpp
 BuildRequires : R-sf
+BuildRequires : R-sp
 BuildRequires : R-units
 BuildRequires : buildreq-R
 BuildRequires : geos-dev
@@ -45,10 +47,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1589413323
+export SOURCE_DATE_EPOCH=1589827534
 
 %install
-export SOURCE_DATE_EPOCH=1589413323
+export SOURCE_DATE_EPOCH=1589827534
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
