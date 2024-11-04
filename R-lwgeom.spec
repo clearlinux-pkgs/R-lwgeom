@@ -7,7 +7,7 @@
 #
 Name     : R-lwgeom
 Version  : 0.2.14
-Release  : 53
+Release  : 54
 URL      : https://cran.r-project.org/src/contrib/lwgeom_0.2-14.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/lwgeom_0.2-14.tar.gz
 Summary  : Bindings to Selected 'liblwgeom' Functions for Simple Features
